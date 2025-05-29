@@ -32,23 +32,29 @@ This repository contains a full-stack, production-ready implementation of a **Re
 
 ## 📂 Project Structure
 
+
+1. Create a Virtual Environment
+```bash
 python -m venv venv
 source venv/bin/activate    # On Windows: venv\Scripts\activate
+```
 
-2. Create a Virtual Environment 
-python -m venv venv
-source venv/bin/activate    # On Windows: venv\Scripts\activate
-
-3. Install dependencies 
+3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-4. Set Environment Variables
+5. Set Environment Variables
+```bash
 OPENAI_API_KEY=your_openai_key
 CHROMA_DB_PATH=./chroma_db
+```
 
-5. Run the App
+7. Run the App
+```bash
 uvicorn main:app --reload
 streamlit run streamlit_app.py
+```
 
 
 
